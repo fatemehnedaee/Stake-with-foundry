@@ -1,17 +1,21 @@
-## Foundry
+# Stake
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+### Staking Smart Contract
 
-Foundry consists of:
+A staking smart contract is a type of smart contract that allows users to stake their tokens and earn rewards in the form of other tokens. This is a common feature of decentralized finance (DeFi) protocols, and it is a way for users to earn passive income on their cryptocurrency holdings.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### How Staking Works
 
-## Documentation
+To stake tokens, users first need to send their tokens to the staking smart contract. The contract will then keep track of how much each user has staked and for how long. Based on this information, the contract will calculate the rewards that each user is entitled to.
 
-https://book.getfoundry.sh/
+The amount of rewards that a user earns is typically based on the following factors:
+
+- The amount of tokens that the user has staked
+
+- The length of time that the user has staked their tokens
+
+- The overall staking rewards pool for the protocol
+
 
 ## Usage
 
@@ -25,42 +29,4 @@ $ forge build
 
 ```shell
 $ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
 ```
